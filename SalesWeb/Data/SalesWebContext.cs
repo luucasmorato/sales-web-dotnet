@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using SalesWeb.Models;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace SalesWeb.Data
 {
@@ -15,5 +10,7 @@ namespace SalesWeb.Data
         }
 
         public DbSet<SalesWeb.Models.Department> Department { get; set; }
+        public DbSet<SalesWeb.Models.Seller> Seller { get; set; }
+        public DbSet<SalesWeb.Models.SalesRecord> SalesRecord { get; set; }
     }
 }
